@@ -16,7 +16,13 @@ Your function would return the following array:
 */
 
 function gooseFilter(birds) {
-  let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  let geese = [
+    "African Geese",
+    "Roman Tufted Geese",
+    "Toulouse Geese",
+    "Pilgrim Geese",
+    "Steinbacher Geese",
+  ];
 
   return birds.filter((bird) => !geese.includes(bird));
   // return an array containing all of the strings in the input array except those that match strings in geese
@@ -26,10 +32,10 @@ console.log(
   gooseFilter([
     "Mallard",
     "Hook Bill",
-    "African",
+    "African Geese",
     "Crested",
-    "Pilgrim",
-    "Toulouse",
+    "Pilgrim Geese",
+    "Toulouse Geese",
     "Blue Swedish",
   ])
 ); // --> ['Mallard', 'Hook Bill', 'Crested', 'Blue Swedish']
